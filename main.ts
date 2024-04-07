@@ -168,7 +168,8 @@ export default class SyncFTP extends Plugin {
 					host: this.settings.url,
 					port: Number(this.settings.port),
 					username: this.settings.username,
-					password: this.settings.password
+					password: this.settings.password,
+					ssh_key_path: this.settings.ssh_key_path
 				});
 
 				if (this.settings.notify) new Notice(conn);
